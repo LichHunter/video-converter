@@ -1,0 +1,16 @@
+log_level: INFO       # DEBUG, INFO, WARNING, ERROR, CRITICAL
+
+whisper:
+  model: medium        # tiny, base, small, medium, large-v3, turbo
+  device: cpu          # cpu, cuda
+  compute_type: int8   # int8, float16, float32
+  beam_size: 5
+  language: null       # null for auto-detect, or: en, ro, ru, etc.
+
+download:
+  output_dir: video
+  format: mp3
+  quality: "192"       # kbps
+
+transcription:
+  output_dir: transcription
